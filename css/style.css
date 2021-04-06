@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+/* google fonts */
+
+:root {
+  --b_orange: hsl(31, 77%, 52%);
+  --d_cyan: hsl(184, 100%, 22%);
+  --vd-cyan: hsl(179, 100%, 13%);
+
+  --t_white: hsla(0, 0%, 100%, 0.75);
+  --vl_grey: hsl(0, 0%, 95%);
+
+  --ff_lexend: 'Lexend Deca', sans-serif;
+  --ff_bsdisplay: 'Big Shoulders Display', cursive;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--ff_lexend);
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.5;
+
+  color: var(--vl_grey);
+}
+
+h1, h2 {
+  line-height: 1.2;
+  font-family: var(--ff_bsdisplay);
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: aqua;
+}
+
+/* ends base */
+
+.container {
+  width: 945px;
+  max-width: 95%;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 12px 30px;
+  border-radius: 50px;
+  background: #ffffff;
+  border: 2px solid transparent;
+}
+
+.b_orange .btn {color: var(--b_orange);}
+.d_cyan .btn {color: var(--d_cyan);}
+.vd-cyan .btn {color: var(--vd-cyan);}
+
+.btn:hover {
+  background: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  transition-duration: .4s;
+  transition-property: background, border, color;
+}
+
+.b_orange {
+  background: var(--b_orange);
+  border-radius: 10px 0 0 10px;
+}
+.d_cyan {background: var(--d_cyan);}
+.vd-cyan {
+  background: var(--vd-cyan);
+  border-radius: 0 10px 10px 0;
+}
+
+/* ends basic */
+
+.main {
+  width: 100%;
+  height: auto;
+  padding: 185px 0;
+  background: var(--vl_grey);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box {
+  width: 308px;
+  max-width: 100%;
+  height: auto;
+  padding: 50px;
+}
+
+.box h2 {
+  margin: 40px 0;
+  font-size: 2.7em;
+  color: var(--t_white);
+}
+
+.box p {margin-bottom: 90px;}
+
+.attribution {
+  background: #212121;
+  padding: 25px 0;
+  text-align: center;
+}
+
+.attribution a {
+  text-decoration: underline;
+}
+
+.attribution a:hover {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1010px) {
+  .b_orange {border-radius: 10px 10px 0 0;}
+  .vd-cyan {border-radius: 0 0 10px 10px;}
+
+  .main {padding: 90px 0 50px;}
+
+  .container {display: block;}
+
+  .box {
+    width: 375px;
+    padding: 50px;
+    margin: 0 auto;
+  }
+
+  .box p {margin-bottom: 30px;}
+}
