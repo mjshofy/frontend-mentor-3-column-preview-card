@@ -42,6 +42,7 @@ Users should be able to:
 ## Author
 
 - Website - [Marjan Shofy](https://www.codermj.com)
+- YouTube - [codermj](https://www.youtube.com/c/codermj)
 - Frontend Mentor - [@mjshofy](https://www.frontendmentor.io/profile/mjshofy)
 - Twitter - [@mjshofy](https://twitter.com/mjshofy)
 - Github - [@mjshofy](https://github.com/mjshofy)
